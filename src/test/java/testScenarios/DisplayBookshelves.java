@@ -71,8 +71,6 @@ public class DisplayBookshelves extends DriverSetup {
 
 		}
 
-		logger.log(Status.PASS, "PASSED");
-
 		action = new Actions(driver);
 		action.moveToElement(HomePageBookShelves.priceFilter(driver)).perform();
 		ExplicitWait.priceFilterVisibility(driver);
@@ -172,10 +170,10 @@ public class DisplayBookshelves extends DriverSetup {
 		HomePageGiftCards.findingAmount(driver).sendKeys("5000");
 		HomePageGiftCards.nextButton(driver).click();
 		HomePageGiftCards.recepientName(driver).sendKeys("abc");
-		HomePageGiftCards.recepientEmail(driver).sendKeys("abc@gmail.com");
+		HomePageGiftCards.recepientEmail(driver).sendKeys("abcgmail.com");
 		HomePageGiftCards.recepientMobile(driver).sendKeys("9876543210");
 		HomePageGiftCards.customerName(driver).sendKeys("cde");
-		HomePageGiftCards.customerEmail(driver).sendKeys("cdegmail.com");
+		HomePageGiftCards.customerEmail(driver).sendKeys("cde@gmail.com");
 		HomePageGiftCards.customerMobileNumber(driver).sendKeys("9876543210");
 		HomePageGiftCards.customerAddress(driver).sendKeys("116/2,Mettu Street,Chennai");
 		HomePageGiftCards.customerPincode(driver).sendKeys("600001");
